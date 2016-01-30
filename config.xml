@@ -6,7 +6,7 @@
 		version   = "0.0.1">
 		<name>faro de oriente</name>
 		<description>
-version de prueba app faro de oriente		</description>
+Cartelera mensual del faro de oriente. Se necesita de una conexion a internet o uso de datos para visualizar el contenido.</description>
 		<author href="" email="mauricio.glez.v@gmail.com">
 Mauricio Alejandro González, Diana Ocampo Mendez
 		</author>
