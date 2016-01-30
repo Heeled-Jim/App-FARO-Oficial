@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta http-equiv="Cache-control" content="no-cache"> 
+<link rel="stylesheet" type="text/css" href="css/page.css" />
+<link rel="stylesheet" type="text/css" href="css/iscrolla.css"/>
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="plugins/cordova-plugin-statusbar/www/statusbar.js"></script>
+<script type="text/javascript" charset="utf-8" src="plugins/cordova-plugin-splashscreen/www/splashscreen.js"></script>
+<script type="text/javascript" charset="utf-8" src="plugins/cordova-plugin-inappbrowser/www/inappbrowser.js"></script>
+<script type="text/javascript" charset="utf-8" src="plugins/cordova-plugin-whitelist/whitelist.js"></script>
+</script>
+<script type="text/javascript" src="js/iscrolla.js"></script>
+<!--<script type="text/javascript" src="js/jquery.js"></script>-->
+<script type="text/javascript" src="js/fastclick.js"></script>
+
+    <script type="text/javascript" src="js/jquery.excoloSlider.js"></script>
+    <script type="text/javascript" src="css/jquery.exocoloSlider.css" rel="stylesheet"></script>
+    <script type="text/javascript" src="js/cordova.js"></script>   
+
+     <script type="text/javascript">
+
+var myScroll;
+
+function loaded () {
+	myScroll = new IScroll('#wrapp', { mouseWheel: true });
+}
+
+document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+
+</script>
+
+
+
+<script type="text/javascript">
+
+var myScroll;
+
+function loaded () {
+	myScroll = new IScroll('#wrapper', {
+		scrollX: true,
+		scrollY: true,
+		momentum: false,
+		snap: true,
+		tap:true
+	});
+}
+
+document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+</script>
+
+
+    <script type="text/javascript" charset="utf-8">
+    // Wait for device API libraries to load//
+    function onLoad() {
+        document.addEventListener("deviceready", onDeviceReady, true);
+    }
+    // device APIs are available //
+    function onDeviceReady() {
+        // Register the event listener
+        document.addEventListener("backbutton", onBackKeyDown, true);
+    }
+    // Handle the back button //
+    function onBackKeyDown() {
+    }
+
+    </script>
+
+</head>
+<body onload="loaded()" >
+
+        <header>
+        <div id="title">
+        <div id="back-btn"><a id="return" href="#"><img src="img/flechas-01.png"/></a></div>
+        <img  src="img/prueba.png"/>
+          <div id="title0"></div>
+          </div>
+</header>
+<div class="page">
+    <div class="center">
+<div class="cartelera">
+
+			</div>
+
+
+
+            <div class="header-1"><div id="header-2"><h3>Cartelera</h3></div></div>
+<div id="wrapper">
+	<div id="scroller">
+    <a href="especiales.html"><div id="especiales" ><input id="esp" type="image" src="img/farito.png" /><p>Especiales</p></div></a>
+    <a href="musica.html"><div id="musica"><input id="mus" type="image" src="img/concha-01.png"/><p>Música</p></div></a>
+    <a href="infantil.html"><div id="infantil"><input id="inf" type="image" src="img/balon.png" /><p>Faro infantil</p></div></a>
+    <a href="cineclub.html"><div id="cineclub"><input id="cin" type="image" src="img/ancla.png" /><p>Cineclub</p></div></a>
+    <a href="literatura.html"><div id="literatura"><input id="lit" type="image" src="img/ave-01.png" /><p>Literatura</p></div></a>
+    <a href="galeria.html"><div id="galeria"><input id="gal" type="image" src="img/fish.png" /><p>Galería</p></div></a>
+    <a href="artes.html"><div id="artes"><input id="art" type="image" src="img/sirena.png" /><p>Artes escénicas</p></div></a>
+   <a href="clubhouse.html"> <div id="clubhouse"><input id="clu" type="image" src="img/brujula-01.png" /><p>Clubhouse</p></div></a>
+       <a href="talleres.html"><div id="especiales" ><input id="esp" type="image" src="img/nudo.png" /><p>Talleres</p></div></a>
+    <a href="comunidad.html"><div id="musica"><input id="mus" type="image" src="img/comunidad.png"/><p>Servicios a la Comunidad</p></div></a>
+    <a href="ludoteca.html"><div id="infantil"><input id="inf" type="image" src="img/ludoteca.png" /><p>Ludoteca</p></div></a>
+    <a href="ambiente.html"><div id="cineclub"><input id="cin" type="image" src="img/ambiente.png" /><p>Medio Ambiente</p></div></a>
+	</div>
+</div>
+
+        </div>
+        </div>
+
+  <footer>
+ <div><a href="http://www.facebook.com/faro.deoriente"><input type="image" src="img/Face_White.png"/></a></div>
+	<div><a href="http://instagram.com/farodeoriente"><input type="image" src="img/Insta_White.png"/></a></div>
+	<div><a href="http://www.youtube.com/user/Farodeorienteoficial"><input type="image" src="img/Youtube_White.png"/></a></div>
+    <div><a href="http://twitter.com/farodeoriente"><input type="image" src="img/Tuiter_White.png"/></a></div>
+    <div><a href="http://flic.kr/s/aHsiTzgDMW"><input type="image" src="img/Flicker_White.png"/></a></div>
+
+      </footer>
+     
+<script type="text/javascript" src="js/jquery.jrumble.1.3.min.js"></script> 
+<script type="" src="js/prettify.js"></script>
+<script>
+    $(document).ready(function() {
+		$('#lit,#cin,#art,#esp,#gal,#inf,#clu,#mus').jrumble({
+speed: 100
+}),
+        $('#lit,#cin,#art,#esp,#gal,#inf,#clu,#mus').hover(function(){
+        $(this).trigger('startRumble');
+    }),
+	function(){
+        $(this).trigger('stopRumble');
+	}
+	})
+</script>
+
+
+<script type="text/javascript">
+        $(function () {
+            $("#sliderA").excoloSlider();
+        });
+    </script>
+
+
+<script type="text/javascript">
+ 
+ $(document).ready(function(){
+      $(".cartelera").load("http://www.farodeoriente.org/prueba/slider.html");
+   });
+</script>
+<script type="text/javascript">
+$.ajaxSetup({ cache:false });
+</script>
+
+</body>
+</html>

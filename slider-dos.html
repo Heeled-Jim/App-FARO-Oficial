@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+
+     <link rel="stylesheet" type="text/css" href="css/page.css" />
+ <script type="text/javascript" src="js/jquery.min.js"></script>
+
+
+<style>
+	#todo{ background-color:#FFF; border:2px solid #000;}
+	#imagen img{width:100%;height:25%;}
+	.fecha{ margin:0;padding:0; border-bottom:2px solid #000;  width:99.85%; }
+	.fecha h3,h4{margin:0;padding:0; margin-left:10px;}
+	#description {margin-left:10px;margin-right:10px;text-align:justify;}
+	#description ul,li{margin-left:5%;}
+
+#contenido{margin-top:65px;margin-bottom:65px;text-align:justify;}
+
+</style>
+
+</head>
+<body>
+   <header>
+        <div id="title">
+        <div id="back-btn"><a id="return" href="#"><img src="img/flechas-01.png"/></a></div>
+        <img  src="img/prueba.png"/>
+          </div>
+</header>
+    
+	
+       <div id="page">
+       <div id="contenido">
+	
+
+
+</div>
+    </div>
+     <footer>
+    <div><a href="https://www.facebook.com/faro.deoriente"><input type="image" src="img/Face_White.png"/></a></div>
+	<div><a href="https://instagram.com/farodeoriente/"><input type="image" src="img/Insta_White.png"/></a></div>
+	<div><a href="https://www.youtube.com/user/Farodeorienteoficial"><input type="image" src="img/Youtube_White.png"/></a></div>
+    <div><a href="https://twitter.com/farodeoriente"><input type="image" src="img/Tuiter_White.png"/></a></div>
+    <div><a href="https://www.flickr.com/photos/29978342@N03"><input type="image" src="img/Flicker_White.png"/></a></div>
+
+      </footer>
+
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+   var refreshId = setInterval('load-async', 3000);
+   $.ajaxSetup({ cache: false });
+ });
+ 
+ $(document).ready(function(){
+	  $("#contenido").text('Cargando....');
+      $("#contenido").load("http://www.farodeoriente.org/prueba/dos.html");
+   });
+</script>
+
+</body>
+</html>

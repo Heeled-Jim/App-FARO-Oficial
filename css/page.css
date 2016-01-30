@@ -1,0 +1,174 @@
+@charset "utf-8";
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	width:100%;
+	height:100%;
+	padding:0;
+	margin:0;	
+	background:  rgba(0, 0, 0, 0.9)
+
+}
+ header{
+	background:  rgba(0, 0, 0, .95);
+	width:100%;
+	top:0;
+	height:9%;
+	position:fixed;
+	z-index:3;
+}
+
+footer{
+	width:100%;
+	height:9%;
+	background:  rgba(0, 0, 0, .95);
+	position:fixed;
+	bottom:0;
+	z-index:3;		
+}
+footer div{
+	display:inline-block;
+	float:left;
+	width:20%;
+	height:auto;
+	background:none;
+	outline:none;	
+}
+footer div input{
+	margin-left:17px;
+	width:45%;
+	height:65%;
+	margin-top:13px;
+	outline:none;
+}
+#back-btn{display:none;}
+
+#back-btn {
+	height:100%;
+	float:left;
+}
+#title {
+	height:100%;
+	color:#FFF;
+	margin:15px 0 0 10px}
+#title img{
+	display:inline-block;
+	height:50%;
+	position:relative;
+}
+#title0 {
+	display:inline-block;
+	top:2.5%;
+	margin-left:2%;
+}
+#title0 p{
+	font-size:110%;
+	display:inline-block;
+	}
+.section{
+	background:none;
+}
+
+
+.cartelera {
+position:absolute;
+background:none;
+top:9%;
+width:100%;
+height:31.1%;
+}
+.cartelera .slider{
+	width: 100%;
+	height: 100%;
+	position:absolute;
+	overflow:hidden;
+  }
+.cartelera .slider div img{width:100%;height:75%;}
+ #page {
+	margin:0% 0% 0% 2%;
+	width:96%;
+	height:100%;
+	overflow:auto;
+}
+.header-1 {
+	position:absolute;
+	width:100%;
+	height:7.1%;
+	top:40%;
+		background:  rgba(0, 0, 0, .95);
+
+}
+ #header-2{
+	text-align:center;
+	font-size:2em;
+	color:white;
+	height:100%;
+
+}
+
+@media only screen and (min-width:768px) and (max-width:959px){
+	.cartelera {
+position:absolute;
+background:none;
+top:5%;
+width:100%;
+height:40%;
+}
+
+.cartelera .slider div img{width:100%;height:65%;}
+#title img{
+	display:inline-block;
+	height:50%;
+	position:relative;
+}
+#title {
+	margin:10px 0 0 10px}
+
+ header{
+	background:  rgba(0, 0, 0, .95);
+	width:100%;
+	top:0;
+	height:5%;
+	position:fixed;
+	z-index:3;
+}
+footer{
+	width:100%;
+	height:5%;
+	background:  rgba(0, 0, 0, .95);
+	position:fixed;
+	bottom:0;
+}
+.header-1 {
+	position: absolute;
+	width: 100%;
+	height: 5%;
+	top: 35%;
+	background: rgba(0, 0, 0, .95);
+
+}
+ #header-2{
+	text-align:center;
+	font-size:2em;
+	color:white;
+	height:100%;
+
+}
+footer div input{
+	margin-left:55%;
+	width:35%;
+	height:50%;
+	margin-top:13px;
+	outline:none;
+}
+footer div{
+	outline:none;	
+		width:18%;
+
+}
+
+
+}
+

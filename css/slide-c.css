@@ -1,0 +1,163 @@
+@charset "utf-8";
+
+section {
+    text-align: center;
+}
+
+input[name="slider-select-element"] {
+    display: none;
+}
+
+#slider-arrows {
+    width: 80%;
+	margin: -20% auto 0 35px;
+	position:absolute;
+}
+
+#slider-box {
+    width: 800%;
+}
+
+#slider-container {
+	display:inline-block;
+    height: 225px;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: left;
+    width: 100%;
+}
+
+.element-1,
+.element-2,
+.element-3,
+.element-4,
+.element-5,
+.element-6,
+.element-7,
+.element-8 {
+    height: 100%;
+    width: 100%;
+}
+
+.element-1 a img,
+.element-2 a img,
+.element-3 a img,
+.element-4 a img,
+.element-5 a img,
+.element-6 a img,
+.element-7 a img,
+.element-8 a img
+{
+	width:100%;
+}
+
+.slider-element {
+    float: left;
+    width: 12.5%;
+}
+
+#element1:checked ~ #slider-arrows label:nth-child(2),
+#element2:checked ~ #slider-arrows label:nth-child(3),
+#element3:checked ~ #slider-arrows label:nth-child(4),
+#element4:checked ~ #slider-arrows label:nth-child(5),
+#element5:checked ~ #slider-arrows label:nth-child(6),
+#element6:checked ~ #slider-arrows label:nth-child(7),
+#element7:checked ~ #slider-arrows label:nth-child(8),
+#element8:checked ~ #slider-arrows label:nth-child(1) {
+    display: block;
+    float: right;
+}
+
+#element1:checked ~ #slider-arrows label:nth-child(8),
+#element2:checked ~ #slider-arrows label:nth-child(1),
+#element3:checked ~ #slider-arrows label:nth-child(2),
+#element4:checked ~ #slider-arrows label:nth-child(3),
+#element5:checked ~ #slider-arrows label:nth-child(4),
+#element6:checked ~ #slider-arrows label:nth-child(5),
+#element7:checked ~ #slider-arrows label:nth-child(6),
+#element8:checked ~ #slider-arrows label:nth-child(7) {
+    display: block;
+    float: left;
+}
+
+#element1:checked ~ #slider-arrows label:nth-child(2):before,
+#element2:checked ~ #slider-arrows label:nth-child(3):before,
+#element3:checked ~ #slider-arrows label:nth-child(4):before,
+#element4:checked ~ #slider-arrows label:nth-child(5):before,
+#element5:checked ~ #slider-arrows label:nth-child(6):before,
+#element6:checked ~ #slider-arrows label:nth-child(7):before,
+#element7:checked ~ #slider-arrows label:nth-child(8):before,
+#element8:checked ~ #slider-arrows label:nth-child(1):before {
+    color: black;
+    content: "\f054";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: antialiased;
+}
+
+#element1:checked ~ #slider-arrows label:nth-child(8):before,
+#element2:checked ~ #slider-arrows label:nth-child(1):before,
+#element3:checked ~ #slider-arrows label:nth-child(2):before,
+#element4:checked ~ #slider-arrows label:nth-child(3):before,
+#element5:checked ~ #slider-arrows label:nth-child(4):before,
+#element6:checked ~ #slider-arrows label:nth-child(5):before,
+#element7:checked ~ #slider-arrows label:nth-child(6):before,
+#element8:checked ~ #slider-arrows label:nth-child(7):before {
+    color: black;
+    content: "\f053";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: antialiased;
+}
+
+#element1:checked ~ #slider-container #slider-box {
+    margin-left: 0;
+}
+
+#element2:checked ~ #slider-container #slider-box {
+    margin-left: -100%;
+}
+
+#element3:checked ~ #slider-container #slider-box {
+    margin-left: -200%;
+}
+#element4:checked ~ #slider-container #slider-box {
+    margin-left: -300%;
+}
+#element5:checked ~ #slider-container #slider-box {
+    margin-left: -400%;
+}
+#element6:checked ~ #slider-container #slider-box {
+    margin-left: -500%;
+}
+#element7:checked ~ #slider-container #slider-box {
+    margin-left: -600%;
+}
+#element8:checked ~ #slider-container #slider-box {
+    margin-left: -700%;
+}
+
+
+#slider-arrows label {
+    color: transparent;
+    cursor: pointer;
+    display: none;
+    font-size: 2rem;
+    height: 20px;
+    width: 20px;
+	
+}
+
+#slider-box {
+    -webkit-transition: all 0.75s ease;
+    -moz-transition: all 0.75s ease;
+    -ms-transition: all 0.75s ease;
+    -o-transition: all 0.75s ease;
+    transition: all 0.75s ease;
+}

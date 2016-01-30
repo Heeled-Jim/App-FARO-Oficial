@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<widget xmlns = "http://www.w3.org/ns/widgets"
+		xmlns:gap = "http://phonegap.com/ns/1.0"
+		id        = "com.farodeoriente.app"
+		versionCode=""
+		version   = "0.0.1">
+		<name>faro de oriente</name>
+		<description>
+version de prueba app faro de oriente		</description>
+		<author href="" email="mauricio.glez.v@gmail.com">
+Mauricio Alejandro González, Diana Ocampo Mendez
+		</author>
+		
+		<preference name="phonegap-version" value="3.7.0" />
+		<preference name="orientation" value="portrait" />
+		<preference name="fullscreen" value="false" />
+		<preference name="target-device" value="universal" />
+		<preference name="webviewbounce" value="true" />
+		<preference name="prerendered-icon" value="false" />
+		<preference name="stay-in-webview" value="false" />
+		<preference name="ios-statusbarstyle" value="default" />
+		<preference name="detect-data-types" value="true" />
+		<preference name="exit-on-suspend" value="false" />
+		<preference name="show-splash-screen-spinner" value="true" />
+		<preference name="auto-hide-splash-screen" value="false" />
+		<preference name="EnableViewportScale" value="true" />
+		<preference name="MediaPlaybackRequiresUserAction" value="false" />
+		<preference name="AllowInlineMediaPlayback" value="false" />
+		<preference name="BackupWebStorage" value="cloud" />
+		<preference name="TopActivityIndicator" value="green" />
+		<preference name="KeyboardDisplayRequiresUserAction" value="false" />
+		<preference name="HideKeyboardFormAccessoryBar" value="false" />
+		<preference name="SuppressesIncrementalRendering" value="false" />
+		<preference name="android-minSdkVersion" value="7" />
+		<preference name="android-maxSdkVersion" value="19" />
+		<preference name="android-targetSdkVersion" value="19" />
+		<preference name="android-installLocation" value="internalOnly" />
+		<preference name="SplashScreen" value="screen" />
+		<preference name="SplashScreenDelay" value="5000" />
+		<preference name="ErrorUrl" value=""/>
+		<preference name="BackgroundColor" value="0x000000"/>
+		<preference name="KeepRunning" value="true"/>
+		<preference name="DisallowOverscroll" value="false"/>
+		<preference name="LoadingDialog" value=","/> 
+		<preference name="LoadUrlTimeoutValue" value="20000" />
+		<preference name="disable-cursor" value="false" />
+		<gap:platform name="ios" />
+		<gap:platform name="android" />
+		<gap:platform name="winphone" />
+		<feature name="http://api.phonegap.com/1.0/network"/>
+		<gap:plugin name="cordova-plugin-splashscreen" version="2.1.0" />
+		<gap:plugin name="org.apache.cordova.inappbrowser"  />
+		<icon src="36x36_cuadro.png" gap:platform="android" gap:density="ldpi" />
+		<icon src="48x48_cuadro.png" gap:platform="android" gap:density="mdpi" />
+		<icon src="72x72_cuadro.png" gap:platform="android" gap:density="hdpi" />
+		<icon src="96x96_cuadro.png" gap:platform="android" gap:density="xhdpi" />
+		<icon src="144x144_cuadro.png" gap:platform="android" gap:density="xxhdpi" />
+		<icon src="192x192_cuadro.png" gap:platform="android" gap:density="xxxhdpi" />
+		<gap:splash src="platforms\android\res\drawable-port-ldpi\screen.png" gap:platform="android" gap:density="ldpi" />
+		<gap:splash src="platforms\android\res\drawable-port-mdpi\screen.png" gap:platform="android" gap:density="mdpi" />
+		<gap:splash src="platforms\android\res\drawable-port-hdpi\screen.png" gap:platform="android" gap:density="hdpi" />
+		<gap:splash src="platforms\android\res\drawable-port-xhdpi\screen.png" gap:platform="android" gap:density="xhdpi" />
+		<gap:splash src="Splash20Screen-05.png" gap:platform="android" gap:density="xxhdpi" />
+		<access origin="http://*" subdomains="true" launch-external="yes"/>
+		<access origin="https://*" subdomains="true" launch-external="yes"/>
+		<access origin="https://*" subdomains="true"/>
+		<access origin="http://*" subdomains="true"/>
+	</widget>
